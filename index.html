@@ -1,0 +1,19 @@
+Start-Process ms-settings:taskbar
+Start-Process ms-settings:notifications
+Start-Process "outlook.exe"
+Start-Process "C:\Program Files\Microsoft OneDrive\OneDrive.exe"
+Start-Process "msedge.exe"
+
+
+Add-Type -AssemblyName System.Windows.Forms
+
+[System.Windows.Forms.MessageBox]::Show("Disable 'Do not disturb', then press 'Alt + Left Arrow'", "Popup Title", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+
+
+[System.Windows.Forms.MessageBox]::Show("Other system tray icon, Add VPN", "Popup Title", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+
+
+[System.Windows.Forms.MessageBox]::Show("Connect to Global Protect", "Popup Title", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+
+
+[System.Windows.Forms.MessageBox]::Show("Open MS Team", "Popup Title", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
